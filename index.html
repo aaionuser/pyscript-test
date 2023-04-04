@@ -6,7 +6,16 @@
 </head>
 <body>    
     <py-script>
-        print("hello world!")
+        import random
+        import string
+
+        a = ("shower", "read", "jogging", "homework", "clean room", "games", "study", "do home chores", "listen to music")
+
+        # printing set(a)
+        print("Your need to:")
+        print ( ''.join(random.choice(a) for i in range(1)))
+        print("or")
+        print ( ''.join(random.choice(a) for i in range(1)))     
     </py-script>
 </body>
 </html>
