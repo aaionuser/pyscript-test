@@ -1,33 +1,40 @@
 <html>
 <head>
-<title>TodoLists</title>
-<link rel="stylesheet" href="https://pyscript.net/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoLists</title>
+    <link rel="stylesheet" href="https://pyscript.net/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    #date
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    #screen resolution
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <h3>________________________________________________________________________________________</h3>
     <h1>To do Programs</h1>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <h2><input type="date" id="date" name="date"></h2>
-    <h3><script>
-        $('#date').val(new Date().toJSON().slice(0, 10));
-    </script></h3>
-    <h3>________________________________________________________________________________________</h3>
     <h2>
-        <py-script>
-            import random
-            import string
+        بسم الله الرحمن الرحيم
+    </h2>
+        <h3><input type="date" id="date" name="date"></h3>
+        <h3>
+            <script>
+                $('#date').val(new Date().toJSON().slice(0, 10));
+            </script>
+        </h3>
+        <h3>________________________________________________________________________________________</h3>
+        <h2>
+            <py-script>
+                import random
+                import string
 
-            a = (("shower", "read", "jogging", "do homework", "clean room", "play games", "study", "do home chores", "listen to music",
-            "charge all your equipment", "clean your window"))
+                a = (("shower", "read", "jogging", "do homework", "clean room", "read quran", "play games", "study", "do home chores", "listen to music",
+                "charge all your equipment", "clean your window"))
 
-            # printing set(a)
-            print("Your Task:")
-            print ( ''.join(random.choice(a) for i in range(1)))
-            print("and")
-            print ( ''.join(random.choice(a) for i in range(1)))
-    </h2></py-script>
-    <h3>________________________________________________________________________________________</h3>
+                # printing set(a)
+                print("Your Task:")
+                print ( ''.join(random.choice(a) for i in range(1)))
+                print("and")
+                print ( ''.join(random.choice(a) for i in range(1)))
+        </h2></py-script>
+        <h3>________________________________________________________________________________________</h3>
 </body>
 </html>
