@@ -1,21 +1,32 @@
 <html>
 <head>
-<title>Project404</title>
+<title>TodoLists</title>
 <link rel="stylesheet" href="https://pyscript.net/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>  
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
-<body>    
-    <py-script>
-        import random
-        import string
+<body>
+    <h3>________________________________________________________________________________________</h3>
+    <h1>To do Programs</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <input type="date" id="date" name="date">
+    <script>
+        $('#date').val(new Date().toJSON().slice(0, 10));
+    </script>
+    <h3>________________________________________________________________________________________</h3>
+    <h2>
+        <py-script>
+            import random
+            import string
 
-        a = ("shower", "read", "jogging", "homework", "clean room", "games", "study", "do home chores", "listen to music")
+            a = (("shower", "read", "jogging", "do homework", "clean room", "play games", "study", "do home chores", "listen to music",
+            "charge all your equipment", "clean your window"))
 
-        # printing set(a)
-        print("Your need to:")
-        print ( ''.join(random.choice(a) for i in range(1)))
-        print("or")
-        print ( ''.join(random.choice(a) for i in range(1)))     
-    </py-script>
+            # printing set(a)
+            print("Your Task:")
+            print ( ''.join(random.choice(a) for i in range(1)))
+            print("and")
+            print ( ''.join(random.choice(a) for i in range(1)))
+    </h2></py-script>
+    <h3>________________________________________________________________________________________</h3>
 </body>
 </html>
